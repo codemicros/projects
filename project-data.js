@@ -83,6 +83,43 @@ window.PROJECTS = [
     privacy: 'https://codemicross.blogspot.com/p/privacy-policy.html', support: 'mailto:codemicros@gmail.com'
   },
   {
+    slug: 'aroundme-website', name: 'AroundMe Website', category: 'websites', kind: 'website', typeLabel: 'Product Website',
+    description: 'The official home for AroundMe features, screenshots, guides and downloads.',
+    summary: 'The official AroundMe website, introducing the nearby-place discovery app with product details, real screens and helpful guides.',
+    about: 'The AroundMe website is the product home for AroundMe: Nearby Places. It explains how the app helps people discover restaurants, ATMs, pharmacies, petrol pumps and many other useful places nearby, while providing real screenshots, feature details, guides and a direct route to download the app.',
+    icon: 'https://aroundme.codemicros.com/brand/app-icon-128.png',
+    preview: 'https://aroundme.codemicros.com/brand/banner-1920.jpg',
+    visual: 'site',
+    tags: ['Website', 'Local Discovery'], featured: false,
+    features: ['Clear overview of the AroundMe app', 'Real product screenshots', 'Nearby-place category information', 'Feature and privacy explanations', 'Helpful discovery guides', 'Direct app download access'],
+    screenshots: [
+      'https://aroundme.codemicros.com/brand/banner-1920.jpg',
+      'https://aroundme.codemicros.com/screenshots/homepage-thumb.jpg',
+      'https://aroundme.codemicros.com/screenshots/categories-thumb.jpg'
+    ],
+    links: [
+      { label: 'Visit Website', url: 'https://aroundme.codemicros.com/', primary: true },
+      { label: 'Get Android App', url: 'https://play.google.com/store/apps/details?id=com.codemicros.around_me' }
+    ],
+    privacy: 'https://aroundme.codemicros.com/privacy', support: 'mailto:codemicros@gmail.com'
+  },
+  {
+    slug: 'code-micros', name: 'Code Micros', category: 'websites', kind: 'website', typeLabel: 'Main Website',
+    description: 'The main Code Micros home for technology, coding and product updates.',
+    summary: 'The main Code Micros website, bringing together technology articles, development insights and updates from the products we build.',
+    about: 'Code Micros is the main online home of the brand. It publishes practical content about software development, mobile apps, programming and technology while connecting visitors with the wider collection of Code Micros products, websites and tools.',
+    icon: '/assets/code-micros-logo.png',
+    preview: '/assets/code-micros-logo.png',
+    visual: 'icon',
+    tags: ['Main Website', 'Technology'], featured: false,
+    features: ['Technology and software articles', 'Mobile and web development insights', 'Programming content across modern platforms', 'Updates from Code Micros products', 'Practical resources for developers and users', 'The central home of the Code Micros brand'],
+    screenshots: [
+      'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiETBi7L9Pn9KibNNYECeLXMXmIVqg5vd4ik3UR3laTvd8Kq7ZHVQ6yUnEovcQC2o7EyHe0mchFFmzClUjxcE7PXutRRZ2yTeU399TU-BHGZohPKPV_5PL19ZYt4tP0hX_dMEvY8e4HG1_F/s1320/Piki+Frame.png'
+    ],
+    links: [{ label: 'Visit Main Website', url: 'https://www.codemicros.com/', primary: true }],
+    support: 'mailto:codemicros@gmail.com'
+  },
+  {
     slug: 'civil-micros', name: 'Civil Micros', category: 'websites', kind: 'website', typeLabel: 'Website',
     description: 'Practical civil calculators, estimators, formulas, converters and guides.',
     summary: 'A civil engineering resource website built around practical calculators and everyday construction references.',

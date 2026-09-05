@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://projects.codemicros.com/" />
   <title>Code Micros — Projects</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/code-micros-logo.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
   <script>
     (() => {
@@ -29,6 +29,7 @@
       <a class="wordmark" href="#top" aria-label="Code Micros home">Code Micros</a>
       <nav class="nav-links">
         <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme">
@@ -57,39 +58,31 @@
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Civil Micros website and Civil All in One Calculator app preview">
+        <div class="hero-visual" aria-label="AroundMe website and AroundMe Nearby Places app preview">
           <div class="laptop-frame" aria-hidden="true">
             <div class="laptop-camera"></div>
             <div class="laptop-screen">
-              <img src="https://civil.codemicros.com/assets/img/hero-construction.png" alt="" />
-              <div class="laptop-ui">
-                <span>Civil Micros</span>
-                <strong>Construction tools that work.</strong>
-                <small>Calculators • estimators • formulas</small>
-              </div>
+              <img src="https://aroundme.codemicros.com/brand/banner-1920.jpg" alt="" />
+              <div class="laptop-site-label">aroundme.codemicros.com</div>
             </div>
             <div class="laptop-base"></div>
           </div>
 
           <div class="phone-frame" aria-hidden="true">
             <div class="phone-speaker"></div>
-            <img
-              src="https://play-lh.googleusercontent.com/kW4HF-DdmQeQ-IYs4aVZN98RYJA7kFHDLKUJ4U3T1n5f0mXKQkFvuFjbRkOi1B-NzyHMUHYaeHWn0zsd0RKjNYk=w526-h296"
-              alt="" />
+            <img src="https://aroundme.codemicros.com/screenshots/homepage-thumb.jpg" alt="" />
           </div>
 
           <div class="hero-app-icon" aria-hidden="true">
-            <img
-              src="https://play-lh.googleusercontent.com/GOebg6ae8uJ-law5lzeDco7w2VeCG2XuF0Qjy_eqTtP-MnVSJfNyPu7OtYNlwqcZrusNlnc53lJJHtTtGoSzFw=w240-h480"
-              alt="" />
+            <img src="https://aroundme.codemicros.com/brand/app-icon-128.png" alt="" />
           </div>
         </div>
       </section>
 
       <section class="stats" aria-label="Code Micros project stats">
         <div class="stat"><strong>4</strong><span>Published apps</span></div>
-        <div class="stat"><strong>4</strong><span>Live websites</span></div>
-        <div class="stat"><strong>8</strong><span>Projects showcased</span></div>
+        <div class="stat"><strong>5</strong><span>Live websites</span></div>
+        <div class="stat"><strong>10</strong><span>Projects showcased</span></div>
         <div class="stat"><strong>Always</strong><span>Building more</span></div>
       </section>
 
@@ -114,6 +107,41 @@
         </div>
         <div class="project-grid" id="projectGrid"></div>
         <p class="empty-state" id="emptyState" hidden>No projects in this category yet.</p>
+      </section>
+
+      <section class="section services-section" id="services" aria-labelledby="services-title">
+        <div class="services-heading">
+          <div>
+            <span class="section-kicker">WHAT WE BUILD</span>
+            <h2 id="services-title">Digital services from idea to launch.</h2>
+          </div>
+          <p>Product thinking, design, engineering and support for businesses that need useful software built well.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card"><span class="service-number">01</span><h3>Mobile App Development</h3><p>Fast, reliable Android, iOS and cross-platform apps built around real user needs.</p></article>
+          <article class="service-card"><span class="service-number">02</span><h3>Websites &amp; Web Apps</h3><p>Responsive websites, product experiences, portals and progressive web applications.</p></article>
+          <article class="service-card"><span class="service-number">03</span><h3>AI &amp; Automation</h3><p>AI-powered features, assistants and practical workflow automation for everyday work.</p></article>
+          <article class="service-card"><span class="service-number">04</span><h3>Custom Software</h3><p>Purpose-built dashboards, admin systems and internal tools shaped around your process.</p></article>
+          <article class="service-card"><span class="service-number">05</span><h3>UI/UX &amp; Product Design</h3><p>Product discovery, user flows and clean interfaces that make complex tasks feel simple.</p></article>
+          <article class="service-card"><span class="service-number">06</span><h3>Backend, APIs &amp; Integrations</h3><p>Secure backends, databases, authentication, payments and third-party service connections.</p></article>
+          <article class="service-card"><span class="service-number">07</span><h3>Cloud &amp; Deployment</h3><p>Hosting, CI/CD, cloud setup, monitoring and dependable production releases.</p></article>
+          <article class="service-card"><span class="service-number">08</span><h3>Support &amp; Optimization</h3><p>Maintenance, performance, accessibility, SEO and security improvements after launch.</p></article>
+        </div>
+      </section>
+
+      <section class="build-together" aria-labelledby="build-title">
+        <div class="build-copy">
+          <span class="section-kicker">WORK WITH CODE MICROS</span>
+          <h2 id="build-title">Have an idea? Let’s build it together.</h2>
+          <p>Create your next app, website, AI solution or custom digital product with us—from the first conversation to launch and beyond.</p>
+          <div class="build-actions">
+            <a class="button build-primary" href="mailto:codemicros@gmail.com?subject=Project%20inquiry%20for%20Code%20Micros">Start a project <span aria-hidden="true">→</span></a>
+            <a class="button build-secondary" href="#services">Explore services</a>
+          </div>
+        </div>
+        <div class="build-options" aria-label="Products we can build">
+          <span>Mobile apps</span><span>Websites</span><span>AI solutions</span><span>Custom software</span>
+        </div>
       </section>
 
       <section class="about-strip" id="about" aria-labelledby="about-title">
@@ -142,6 +170,7 @@
       </div>
       <div class="footer-links">
         <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
