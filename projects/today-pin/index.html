@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f7f7f5" />
+  <meta name="description" content="Today Pin is a private, widget-first planner for tasks, notes and routines." />
+  <meta property="og:title" content="Today Pin — Code Micros" />
+  <meta property="og:description" content="A private, widget-first planner that keeps today’s tasks, notes and routines close at hand." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://projects.codemicros.com/projects/today-pin/" />
+  <title>Today Pin — Code Micros</title>
+  <link rel="icon" href="../../assets/today-pin/icon.png" type="image/png" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script>
+    (() => {
+      const saved = localStorage.getItem('cm-theme');
+      const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = saved || preferred;
+    })();
+  </script>
+</head>
+<body class="detail-page" data-project-slug="today-pin">
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="wordmark" href="../../" aria-label="Code Micros projects home">Code Micros</a>
+      <nav class="nav-links">
+        <a href="../../#projects">Projects</a>
+        <a href="../../#services">Services</a>
+        <a href="../../#about">About</a>
+        <a href="../../#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main class="detail-main" id="projectDetail"></main>
+
+    <footer class="site-footer">
+      <div><a class="wordmark footer-wordmark" href="../../">Code Micros</a><p>Building useful digital products.</p></div>
+      <div class="footer-links"><a href="../../#projects">Projects</a><a href="../../#services">Services</a><a href="../../#about">About</a><a href="../../#contact">Contact</a></div>
+      <div class="footer-meta"><a href="https://www.codemicros.com/" target="_blank" rel="noopener noreferrer">codemicros.com ↗</a><span>© <span id="year"></span> Code Micros</span></div>
+    </footer>
+  </div>
+  <dialog class="image-dialog" id="imageDialog"><div class="image-dialog-inner"><button class="dialog-close" id="dialogClose" type="button" aria-label="Close image">×</button><img id="dialogImage" alt="" /></div></dialog>
+  <script src="../../project-data.js"></script>
+  <script src="../../detail.js"></script>
+</body>
+</html>

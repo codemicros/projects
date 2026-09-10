@@ -27,12 +27,17 @@ if (!project) {
   document.querySelector('meta[property="og:description"]')?.setAttribute('content', project.summary);
   document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://projects.codemicros.com/projects/${project.slug}/`);
 
-  const actionButtons = (project.links || []).map(link =>
+  const actionLinks = [...(project.links || [])];
+  if (project.privacy && project.privacyButton) {
+    actionLinks.push({ label: 'Privacy Policy', url: project.privacy, primary: actionLinks.length === 0 });
+  }
+
+  const actionButtons = actionLinks.map(link =>
     `<a class="button ${link.primary ? 'button-primary' : 'button-secondary'}" href="${safeAttr(link.url)}" target="_blank" rel="noopener noreferrer">${safeAttr(link.label)} <span aria-hidden="true">↗</span></a>`
   ).join('');
 
   const policyLinks = [
-    project.privacy ? `<a href="${safeAttr(project.privacy)}" target="_blank" rel="noopener noreferrer">Privacy Policy ↗</a>` : '',
+    project.privacy && !project.privacyButton ? `<a href="${safeAttr(project.privacy)}" target="_blank" rel="noopener noreferrer">Privacy Policy ↗</a>` : '',
     project.support ? `<a href="${safeAttr(project.support)}">Support</a>` : ''
   ].filter(Boolean).join('');
 

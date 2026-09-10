@@ -1,5 +1,29 @@
 window.PROJECTS = [
   {
+    slug: 'today-pin',
+    name: 'Today Pin',
+    category: 'apps', kind: 'app', typeLabel: 'Mobile App',
+    description: 'Offline tasks, sticky notes, routines and home-screen widgets.',
+    summary: 'A private, widget-first planner that keeps today’s tasks, notes and routines close at hand.',
+    about: 'Today Pin is a focused productivity app for planning the day without accounts, ads or subscriptions. Tasks, notes, routines and preferences stay on the device, while customizable home-screen widgets make priorities visible and let users check off tasks at a glance.',
+    icon: '/assets/today-pin/icon.png',
+    preview: '/assets/today-pin/hero.png',
+    visual: 'site',
+    tags: ['Android', 'iOS', 'Productivity'],
+    featured: false,
+    features: ['Today and upcoming task lists', 'Home-screen widgets with quick task completion', 'Sticky notes with colours and pinning', 'Reusable routines and checklists', 'Local reminders, recurring schedules and rollover', 'Private offline storage with light and dark themes'],
+    screenshots: [
+      '/assets/today-pin/01-widget-home-screen.png',
+      '/assets/today-pin/02-today-tasks-progress.png',
+      '/assets/today-pin/04-colourful-notes.png',
+      '/assets/today-pin/08-offline-privacy-themes.png'
+    ],
+    links: [],
+    privacy: '/projects/today-pin/privacy/',
+    privacyButton: true,
+    support: 'mailto:codemicros@gmail.com'
+  },
+  {
     slug: 'civil-all-in-one',
     name: 'Civil All in One Calculator',
     category: 'apps', kind: 'app', typeLabel: 'Mobile App',
