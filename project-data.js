@@ -18,9 +18,10 @@ window.PROJECTS = [
       '/assets/today-pin/04-colourful-notes.png',
       '/assets/today-pin/08-offline-privacy-themes.png'
     ],
-    links: [],
+    links: [
+      { label: 'Privacy Policy', url: '/projects/today-pin/privacy/', primary: true }
+    ],
     privacy: '/projects/today-pin/privacy/',
-    privacyButton: true,
     support: 'mailto:codemicros@gmail.com'
   },
   {
