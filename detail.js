@@ -32,8 +32,9 @@ if (!project) {
     actionLinks.push({ label: 'Privacy Policy', url: project.privacy, primary: actionLinks.length === 0 });
   }
 
-  const actionButtons = actionLinks.map(link =>
-    `<a class="button ${link.primary ? 'button-primary' : 'button-secondary'}" href="${safeAttr(link.url)}" target="_blank" rel="noopener noreferrer">${safeAttr(link.label)} <span aria-hidden="true">↗</span></a>`
+  const actionButtons = actionLinks.map(link => link.comingSoon
+    ? `<span class="button button-disabled" aria-disabled="true">${safeAttr(link.label)}</span>`
+    : `<a class="button ${link.primary ? 'button-primary' : 'button-secondary'}" href="${safeAttr(link.url)}" target="_blank" rel="noopener noreferrer">${safeAttr(link.label)} <span aria-hidden="true">↗</span></a>`
   ).join('');
 
   const policyLinks = [

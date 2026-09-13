@@ -23,17 +23,6 @@ function featuredCard(project) {
     </a>`;
 }
 function projectCard(project) {
-  if (project.slug === 'today-pin' && project.privacy) {
-    return `
-      <article class="project-card project-card-with-action" data-kind="${safeAttr(project.kind)}">
-        <a class="project-card-main" href="${detailUrl(project)}" aria-label="View ${safeAttr(project.name)} project details">
-          <div class="project-icon-wrap"><img src="${safeAttr(project.icon)}" alt="${safeAttr(project.name)} icon or preview" loading="lazy" /></div>
-          <div class="project-card-copy"><h3>${project.name}</h3><p>${project.description}</p><div class="tags">${renderTags(project.tags.slice(0, 2))}</div></div>
-          <span class="project-card-arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="project-privacy-button" href="${safeAttr(project.privacy)}">Privacy Policy <span aria-hidden="true">→</span></a>
-      </article>`;
-  }
   return `
     <a class="project-card" data-kind="${safeAttr(project.kind)}" href="${detailUrl(project)}" aria-label="View ${safeAttr(project.name)} project details">
       <div class="project-icon-wrap"><img src="${safeAttr(project.icon)}" alt="${safeAttr(project.name)} icon or preview" loading="lazy" /></div>

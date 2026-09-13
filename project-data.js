@@ -25,6 +25,34 @@ window.PROJECTS = [
     support: 'mailto:codemicros@gmail.com'
   },
   {
+    slug: 'bubble-level',
+    name: 'Bubble Level - Leveler Tool',
+    category: 'apps', kind: 'app', typeLabel: 'Mobile App',
+    description: 'A realistic spirit level for precise surface and object alignment.',
+    summary: 'Turn your iPhone into a simple, realistic spirit level with precise angle readings, calibration and helpful feedback.',
+    about: 'Bubble Level - Leveler Tool makes everyday alignment jobs quick and intuitive. Place your iPhone on a surface and the physical-style bubble responds in real time using the device sensors. Switch between horizontal, vertical and circular level views, inspect precise X and Y angles, calibrate the sensor, hold a reading or set a custom zero for relative measurements.',
+    icon: '/assets/bubble-level/icon.png',
+    preview: '/assets/bubble-level/01-realistic-bubble-level.webp',
+    visual: 'screen',
+    tags: ['iOS', 'Utilities'],
+    featured: false,
+    features: ['Horizontal, vertical and circular bubble-level views', 'Precise X and Y angle readings', 'Easy device calibration for reliable measurements', 'Hold readings and set a custom zero angle', 'Optional sound and haptic level feedback', 'Multiple level colours and styles with keep-screen-awake support'],
+    screenshots: [
+      '/assets/bubble-level/01-realistic-bubble-level.webp',
+      '/assets/bubble-level/02-precise-xy-readings.webp',
+      '/assets/bubble-level/03-easy-calibration.webp',
+      '/assets/bubble-level/04-sound-haptic-feedback.webp',
+      '/assets/bubble-level/05-choose-your-style.webp',
+      '/assets/bubble-level/06-hold-set-zero.webp'
+    ],
+    links: [
+      { label: 'Download on the App Store', url: 'https://apps.apple.com/us/app/bubble-level-leveler-tool/id6808423490', primary: true },
+      { label: 'Android — Coming Soon', comingSoon: true }
+    ],
+    privacy: 'https://civil.codemicros.com/bubble-level-privacy-policy.html',
+    support: 'mailto:codemicros@gmail.com'
+  },
+  {
     slug: 'civil-all-in-one',
     name: 'Civil All in One Calculator',
     category: 'apps', kind: 'app', typeLabel: 'Mobile App',
