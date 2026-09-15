@@ -19,7 +19,8 @@ window.PROJECTS = [
       '/assets/today-pin/08-offline-privacy-themes.png'
     ],
     links: [
-      { label: 'Privacy Policy', url: '/projects/today-pin/privacy/', primary: true }
+      { label: 'Download on the App Store', url: 'https://apps.apple.com/us/app/today-pin-notes-tasks/id6810835430', primary: true },
+      { label: 'Privacy Policy', url: '/projects/today-pin/privacy/' }
     ],
     privacy: '/projects/today-pin/privacy/',
     support: 'mailto:codemicros@gmail.com'
