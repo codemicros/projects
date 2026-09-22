@@ -111,6 +111,7 @@ window.PROJECTS = [
     ],
     links: [
       { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.codemicros.calqen', primary: true },
+      { label: 'App Store', url: 'https://apps.apple.com/us/app/calqen-scientific-calculator/id6806579798' },
       { label: 'Use Calqen Online', url: 'https://calqen.codemicros.com/' }
     ],
     privacy: 'https://moneyandexpensetracker.blogspot.com/p/calqen-privacy-policy.html', support: 'mailto:codemicros@gmail.com'
