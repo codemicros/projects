@@ -93,7 +93,7 @@ window.PROJECTS = [
       'https://play-lh.googleusercontent.com/cRWYaOOWeGG497UeDLM3qBQ7bjotNxM16L1V07q88PtheW_pGswRrsRW8yFpNHCR72shUGtUMaHqfCPkJR31=w526-h296'
     ],
     links: [{ label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.codemicros.money_tracker', primary: true }],
-    privacy: 'https://moneyandexpensetracker.blogspot.com/p/privacy-policy.html', support: 'mailto:codemicros@gmail.com'
+    privacy: '/projects/my-money-ledger/privacy-policy/', support: 'mailto:codemicros@gmail.com'
   },
   {
     slug: 'calqen-scientific-calculator', name: 'Calqen Scientific Calculator', category: 'apps', kind: 'app', typeLabel: 'Mobile App',

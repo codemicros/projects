@@ -551,10 +551,11 @@ html[data-theme="dark"] .icon-moon { display: none; }
 .policy-content section { padding: 0 0 34px; margin: 0 0 34px; border-bottom: 1px solid var(--line); }
 .policy-content section:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
 .policy-content h2 { margin: 0 0 15px; font-size: clamp(1.35rem, 2.5vw, 1.75rem); letter-spacing: -.035em; }
+.policy-content h3 { margin: 28px 0 10px; font-size: 1.05rem; letter-spacing: -.015em; }
 .policy-content p, .policy-content li { color: var(--muted); font-size: .98rem; line-height: 1.78; }
 .policy-content p { margin: 0 0 14px; }
 .policy-content p:last-child { margin-bottom: 0; }
-.policy-content ul { margin: 14px 0 16px; padding-left: 22px; }
+.policy-content ul, .policy-content ol { margin: 14px 0 16px; padding-left: 22px; }
 .policy-content li { margin-bottom: 8px; }
 .policy-content a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
 
