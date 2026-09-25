@@ -5,7 +5,7 @@ window.PROJECTS = [
     category: 'apps', kind: 'app', typeLabel: 'Mobile App',
     description: 'Offline tasks, sticky notes, routines and home-screen widgets.',
     summary: 'A private, widget-first planner that keeps today’s tasks, notes and routines close at hand.',
-    about: 'Today Pin is a focused productivity app for planning the day without accounts, ads or subscriptions. Tasks, notes, routines and preferences stay on the device, while customizable home-screen widgets make priorities visible and let users check off tasks at a glance.',
+    about: 'Today Pin is a focused productivity app for planning the day without accounts or subscriptions. Tasks, notes, routines and preferences stay on the device, while customizable home-screen widgets make priorities visible and let users check off tasks at a glance. The app displays ads through Google AdMob.',
     icon: '/assets/today-pin/icon.png',
     preview: '/assets/today-pin/hero.png',
     visual: 'site',
