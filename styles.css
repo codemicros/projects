@@ -289,6 +289,11 @@ html[data-theme="dark"] .icon-moon { display: none; }
 .featured-card-body p { margin: 7px 0 16px; min-height: 38px; color: var(--muted); font-size: 12.5px; line-height: 1.5; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .tag { padding: 5px 9px; border-radius: 999px; background: var(--chip); border: 1px solid var(--line); font-size: 10px; color: var(--muted); font-weight: 700; }
+.featured-card, .project-card, .related-card { position: relative; }
+.card-detail-link { position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
+.tag-link { position: relative; z-index: 2; }
+.tag-link:hover { color: var(--text); border-color: var(--strong-line); }
+.card-detail-link:focus-visible, .tag-link:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 
 .all-projects { padding-top: 58px; }
 .projects-heading-row h2 { margin: 0; font-size: 30px; letter-spacing: -0.04em; }

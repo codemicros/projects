@@ -7,28 +7,34 @@ const filterButtons = [...document.querySelectorAll('.filter')];
 function safeAttr(value) {
   return String(value).replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 }
-function renderTags(tags) { return tags.map(tag => `<span class="tag">${tag}</span>`).join(''); }
+function renderTags(tags, tagLinks = {}) {
+  return tags.map(tag => tagLinks[tag]
+    ? `<a class="tag tag-link" href="${safeAttr(tagLinks[tag])}" target="_blank" rel="noopener noreferrer">${safeAttr(tag)}</a>`
+    : `<span class="tag">${safeAttr(tag)}</span>`).join('');
+}
 function detailUrl(project) { return `projects/${encodeURIComponent(project.slug)}/`; }
 
 function featuredCard(project) {
   return `
-    <a class="featured-card" href="${detailUrl(project)}" aria-label="View ${safeAttr(project.name)} project details">
+    <article class="featured-card">
+      <a class="card-detail-link" href="${detailUrl(project)}" aria-label="View ${safeAttr(project.name)} project details"></a>
       <div class="featured-card-art" data-visual="${safeAttr(project.visual)}">
         <img class="preview" src="${safeAttr(project.preview)}" alt="${safeAttr(project.name)} preview" loading="lazy" />
       </div>
       <div class="featured-card-body">
         <div class="card-title-row"><h3>${project.name}</h3><span class="card-arrow" aria-hidden="true">↗</span></div>
-        <p>${project.description}</p><div class="tags">${renderTags(project.tags)}</div>
+        <p>${project.description}</p><div class="tags">${renderTags(project.tags, project.tagLinks)}</div>
       </div>
-    </a>`;
+    </article>`;
 }
 function projectCard(project) {
   return `
-    <a class="project-card" data-kind="${safeAttr(project.kind)}" href="${detailUrl(project)}" aria-label="View ${safeAttr(project.name)} project details">
+    <article class="project-card" data-kind="${safeAttr(project.kind)}">
+      <a class="card-detail-link" href="${detailUrl(project)}" aria-label="View ${safeAttr(project.name)} project details"></a>
       <div class="project-icon-wrap"><img src="${safeAttr(project.icon)}" alt="${safeAttr(project.name)} icon or preview" loading="lazy" /></div>
-      <div class="project-card-copy"><h3>${project.name}</h3><p>${project.description}</p><div class="tags">${renderTags(project.tags.slice(0, 2))}</div></div>
+      <div class="project-card-copy"><h3>${project.name}</h3><p>${project.description}</p><div class="tags">${renderTags(project.tags.slice(0, 2), project.tagLinks)}</div></div>
       <span class="project-card-arrow" aria-hidden="true">↗</span>
-    </a>`;
+    </article>`;
 }
 featuredGrid.innerHTML = projects.filter(p => p.featured).slice(0, 3).map(featuredCard).join('');
 function renderProjects(filter = 'all') {

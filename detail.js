@@ -5,7 +5,11 @@ const project = projects.find(item => item.slug === slug);
 function safeAttr(value) {
   return String(value ?? '').replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 }
-function renderTags(tags = []) { return tags.map(tag => `<span class="tag">${safeAttr(tag)}</span>`).join(''); }
+function renderTags(tags = [], tagLinks = {}) {
+  return tags.map(tag => tagLinks[tag]
+    ? `<a class="tag tag-link" href="${safeAttr(tagLinks[tag])}" target="_blank" rel="noopener noreferrer">${safeAttr(tag)}</a>`
+    : `<span class="tag">${safeAttr(tag)}</span>`).join('');
+}
 
 const themeToggle = document.getElementById('themeToggle');
 if (themeToggle) themeToggle.addEventListener('click', () => {
@@ -63,7 +67,7 @@ if (!project) {
           </div>
         </div>
         <p class="detail-lead">${safeAttr(project.summary)}</p>
-        <div class="tags detail-tags">${renderTags(project.tags)}</div>
+        <div class="tags detail-tags">${renderTags(project.tags, project.tagLinks)}</div>
         <div class="detail-actions">${actionButtons}</div>
       </div>
       <div class="detail-hero-visual" data-visual="${safeAttr(project.visual)}">
@@ -79,7 +83,7 @@ if (!project) {
       </div>
       <aside class="detail-facts">
         <div><span>Product</span><strong>${safeAttr(project.typeLabel)}</strong></div>
-        <div><span>Status</span><strong>Live</strong></div>
+        <div><span>Status</span><strong>${safeAttr(project.status || 'Live')}</strong></div>
         <div><span>Built by</span><strong>Code Micros</strong></div>
         ${policyLinks ? `<div class="detail-policy-links">${policyLinks}</div>` : ''}
       </aside>
@@ -90,19 +94,20 @@ if (!project) {
       <div class="feature-list">${project.features.map((feature, index) => `<div class="feature-item"><span>${String(index + 1).padStart(2, '0')}</span><p>${safeAttr(feature)}</p></div>`).join('')}</div>
     </section>
 
-    <section class="detail-section screenshots-section">
+    ${screenshots ? `<section class="detail-section screenshots-section">
       <div class="detail-section-heading"><span class="detail-section-label">PRODUCT PREVIEW</span><h2>Screenshots.</h2><p>Real visuals from the live product and store listing.</p></div>
       <div class="screenshot-track">${screenshots}</div>
-    </section>
+    </section>` : ''}
 
     <section class="detail-section related-section">
       <div class="section-heading-row"><h2>MORE FROM CODE MICROS</h2><a class="text-link" href="../../#all-projects">View all projects →</a></div>
       <div class="related-grid">${related.map(item => `
-        <a class="related-card" href="../${safeAttr(item.slug)}/">
+        <article class="related-card">
+          <a class="card-detail-link" href="../${safeAttr(item.slug)}/" aria-label="View ${safeAttr(item.name)} project details"></a>
           <div class="related-card-icon"><img src="${safeAttr(item.icon)}" alt="" loading="lazy" /></div>
-          <div><h3>${safeAttr(item.name)}</h3><p>${safeAttr(item.description)}</p><div class="tags">${renderTags(item.tags.slice(0,2))}</div></div>
+          <div><h3>${safeAttr(item.name)}</h3><p>${safeAttr(item.description)}</p><div class="tags">${renderTags(item.tags.slice(0,2), item.tagLinks)}</div></div>
           <span aria-hidden="true">→</span>
-        </a>`).join('')}</div>
+        </article>`).join('')}</div>
     </section>
   `;
 

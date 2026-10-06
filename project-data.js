@@ -1,5 +1,19 @@
 window.PROJECTS = [
   {
+    slug: 'fonts-keyboard', name: 'Fonts Keyboard: Stylish Text',
+    category: 'apps', kind: 'app', typeLabel: 'Mobile App', status: 'Coming Soon',
+    description: '220+ font families, fancy text, themes and customizable keyboards. Coming soon.',
+    summary: 'Coming soon: a customizable keyboard with 220+ font families, stylish text and personal themes.',
+    about: 'Fonts Keyboard: Stylish Text helps you personalize your typing with fancy text, over 220 font families, keyboard themes and customizable keyboards. Choose photo backgrounds, use emojis and symbols, and keep favourites and saved replies close at hand.',
+    icon: '/assets/fonts-keyboard/icon.svg', preview: '/assets/fonts-keyboard/icon.svg', visual: 'icon',
+    tags: ['Android', 'iOS', 'Coming Soon'], featured: false,
+    features: ['220+ font families and stylish text', 'Customizable keyboard themes', 'Personal photo backgrounds', 'Emojis and symbols', 'Favourites and saved replies', 'On-device keyboard settings and preferences'],
+    screenshots: [],
+    links: [{ label: 'Coming Soon', comingSoon: true }],
+    privacy: '/projects/fonts-keyboard/privacy-policy/', privacyButton: true,
+    support: 'mailto:codemicros@gmail.com'
+  },
+  {
     slug: 'today-pin',
     name: 'Today Pin',
     category: 'apps', kind: 'app', typeLabel: 'Mobile App',
@@ -98,11 +112,12 @@ window.PROJECTS = [
   {
     slug: 'calqen-scientific-calculator', name: 'Calqen Scientific Calculator', category: 'apps', kind: 'app', typeLabel: 'Mobile App',
     description: 'Scientific calculation, graphing, equations, statistics and conversions.',
-    summary: 'A modern scientific calculator that combines advanced math tools in one focused Android experience.',
+    summary: 'A modern scientific calculator that combines advanced math tools in one focused Android and iOS experience.',
     about: 'Calqen is designed for students, engineers and anyone who needs more than basic arithmetic. It combines scientific calculation with graphing, equation solving, statistics, fractions, unit conversion, formula references, history and productivity features in a single calculator app.',
     icon: 'https://play-lh.googleusercontent.com/v7tGKy035VtkmPd8JJ8VyhEe1QoPteMHuow_AOI-zl9ms-XYKKTuv4kcQws5r8eZTQMCBZ8y_uYCbCt1P18KCo4=w240-h480',
     preview: 'https://calqen.codemicros.com/assets/screenshots/01-fast-scientific-calculator.png', visual: 'screen',
-    tags: ['Android', 'Math'], featured: true,
+    tags: ['Android', 'iOS', 'Math'], featured: true,
+    tagLinks: { iOS: 'https://apps.apple.com/us/app/calqen-scientific-calculator/id6806579798' },
     features: ['Scientific calculator', 'Graphing calculator', 'Linear and quadratic equation solver', 'Statistics and regression tools', 'Unit converter and DMS conversion', 'Floating calculator, history and formula library'],
     screenshots: [
       'https://calqen.codemicros.com/assets/screenshots/01-fast-scientific-calculator.png',
