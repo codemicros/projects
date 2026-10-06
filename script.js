@@ -1,4 +1,7 @@
 const projects = window.PROJECTS || [];
+document.getElementById('appProjectCount').textContent = projects.filter(project => project.category === 'apps').length;
+document.getElementById('liveWebsiteCount').textContent = projects.filter(project => project.category === 'websites' && (project.status || 'Live') === 'Live').length;
+document.getElementById('projectCount').textContent = projects.length;
 const featuredGrid = document.getElementById('featuredGrid');
 const projectGrid = document.getElementById('projectGrid');
 const emptyState = document.getElementById('emptyState');
