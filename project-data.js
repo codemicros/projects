@@ -1,11 +1,32 @@
 window.PROJECTS = [
   {
+    slug: 'auto-level-3d-simulator', name: 'Auto Level 3D Simulator',
+    category: 'apps', kind: 'app', typeLabel: 'Mobile App', status: 'Coming Soon',
+    description: 'Practice auto level surveying with 3D lessons and virtual fieldwork. Coming soon.',
+    summary: 'Practice automatic levelling with hands-on 3D lessons, virtual fieldwork and a surveying field book.',
+    about: 'Auto Level 3D Simulator helps civil engineering students and surveying trainees practise levelling procedures at their own pace. Set up the tripod, centre the circular bubble, adjust the eyepiece and telescope focus, sight a metric staff, and record backsight and foresight readings. Use the field book to work through reduced level (RL) calculations. This educational simulator does not measure real-world elevations or replace a calibrated surveying instrument.',
+    icon: '/assets/auto-level-3d-simulator/icon.png', preview: '/assets/auto-level-3d-simulator/01-virtual-field.png', visual: 'screen',
+    tags: ['Android', 'iOS', 'Surveying'], featured: false,
+    features: ['12 guided lessons covering the instrument, its controls and surveying procedure', 'Interactive 3D controls for levelling, focusing and sighting', 'Four field sites with three difficulty levels each', 'Metric staff readings, BS/FS observations and field-book RL calculations', 'Lesson and practice progress saved locally', 'Offline training without an account'],
+    screenshots: [
+      '/assets/auto-level-3d-simulator/01-virtual-field.png',
+      '/assets/auto-level-3d-simulator/02-connected-setup.png',
+      '/assets/auto-level-3d-simulator/03-connected-details.png',
+      '/assets/auto-level-3d-simulator/04-instrument-controls.png',
+      '/assets/auto-level-3d-simulator/05-every-angle.png',
+      '/assets/auto-level-3d-simulator/06-practice-repeat.png'
+    ],
+    links: [{ label: 'Play Store — Coming Soon', comingSoon: true }, { label: 'App Store — Coming Soon', comingSoon: true }],
+    privacy: '/projects/auto-level-3d-simulator/privacy-policy/', privacyButton: true,
+    support: 'mailto:codemicros@gmail.com'
+  },
+  {
     slug: 'fonts-keyboard', name: 'Fonts Keyboard: Stylish Text',
     category: 'apps', kind: 'app', typeLabel: 'Mobile App', status: 'Coming Soon',
     description: '220+ font families, fancy text, themes and customizable keyboards. Coming soon.',
     summary: 'Coming soon: a customizable keyboard with 220+ font families, stylish text and personal themes.',
     about: 'Fonts Keyboard: Stylish Text helps you personalize your typing with fancy text, over 220 font families, keyboard themes and customizable keyboards. Choose photo backgrounds, use emojis and symbols, and keep favourites and saved replies close at hand.',
-    icon: '/assets/fonts-keyboard/icon.svg', preview: '/assets/fonts-keyboard/icon.svg', visual: 'icon',
+    icon: '/assets/fonts-keyboard/icon.png', preview: '/assets/fonts-keyboard/icon.png', visual: 'icon',
     tags: ['Android', 'iOS', 'Coming Soon'], featured: false,
     features: ['220+ font families and stylish text', 'Customizable keyboard themes', 'Personal photo backgrounds', 'Emojis and symbols', 'Favourites and saved replies', 'On-device keyboard settings and preferences'],
     screenshots: [],
