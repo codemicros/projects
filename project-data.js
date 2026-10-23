@@ -29,7 +29,18 @@ window.PROJECTS = [
     icon: '/assets/fonts-keyboard/icon.png', preview: '/assets/fonts-keyboard/icon.png', visual: 'icon',
     tags: ['Android', 'iOS', 'Coming Soon'], featured: false,
     features: ['220+ font families and stylish text', 'Customizable keyboard themes', 'Personal photo backgrounds', 'Emojis and symbols', 'Favourites and saved replies', 'On-device keyboard settings and preferences'],
-    screenshots: [],
+    screenshots: [
+      '/assets/fonts-keyboard/01-overview.png',
+      '/assets/fonts-keyboard/02-font-styles.png',
+      '/assets/fonts-keyboard/03-photo-keyboard.png',
+      '/assets/fonts-keyboard/04-themes.png',
+      '/assets/fonts-keyboard/05-emoji-symbols.png',
+      '/assets/fonts-keyboard/06-bios-captions.png',
+      '/assets/fonts-keyboard/07-saved-replies.png',
+      '/assets/fonts-keyboard/08-favourites.png'
+    ],
+    screenshotHeading: 'App previews.',
+    screenshotNote: 'Promotional previews of the planned app experience.',
     links: [{ label: 'Coming Soon', comingSoon: true }],
     privacy: '/projects/fonts-keyboard/privacy-policy/', privacyButton: true,
     support: 'mailto:codemicros@gmail.com'

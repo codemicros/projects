@@ -95,7 +95,7 @@ if (!project) {
     </section>
 
     ${screenshots ? `<section class="detail-section screenshots-section">
-      <div class="detail-section-heading"><span class="detail-section-label">PRODUCT PREVIEW</span><h2>Screenshots.</h2><p>${project.status === 'Coming Soon' ? 'Preview images from the app.' : 'Real visuals from the live product and store listing.'}</p></div>
+      <div class="detail-section-heading"><span class="detail-section-label">PRODUCT PREVIEW</span><h2>${safeAttr(project.screenshotHeading || 'Screenshots.')}</h2><p>${safeAttr(project.screenshotNote || (project.status === 'Coming Soon' ? 'Preview images from the app.' : 'Real visuals from the live product and store listing.'))}</p></div>
       <div class="screenshot-track">${screenshots}</div>
     </section>` : ''}
 
