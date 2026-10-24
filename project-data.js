@@ -22,12 +22,14 @@ window.PROJECTS = [
   },
   {
     slug: 'fonts-keyboard', name: 'Fonts Keyboard: Stylish Text',
-    category: 'apps', kind: 'app', typeLabel: 'Mobile App', status: 'Coming Soon',
-    description: '220+ font families, fancy text, themes and customizable keyboards. Coming soon.',
-    summary: 'Coming soon: a customizable keyboard with 220+ font families, stylish text and personal themes.',
+    category: 'apps', kind: 'app', typeLabel: 'Mobile App', status: 'Live on Android',
+    description: '220+ font families, fancy text, themes and customizable keyboards. Available on Android.',
+    summary: 'Available on Android: a customizable keyboard with 220+ font families, stylish text and personal themes.',
     about: 'Fonts Keyboard: Stylish Text helps you personalize your typing with fancy text, over 220 font families, keyboard themes and customizable keyboards. Choose photo backgrounds, use emojis and symbols, and keep favourites and saved replies close at hand.',
     icon: '/assets/fonts-keyboard/icon.png', preview: '/assets/fonts-keyboard/icon.png', visual: 'icon',
-    tags: ['Android', 'iOS', 'Coming Soon'], featured: false,
+    tags: ['Android', 'iOS Coming Soon', 'Keyboard'],
+    tagLinks: { Android: 'https://play.google.com/store/apps/details?id=com.codemicros.fontskeyboard' },
+    featured: false,
     features: ['220+ font families and stylish text', 'Customizable keyboard themes', 'Personal photo backgrounds', 'Emojis and symbols', 'Favourites and saved replies', 'On-device keyboard settings and preferences'],
     screenshots: [
       '/assets/fonts-keyboard/01-overview.png',
@@ -40,8 +42,11 @@ window.PROJECTS = [
       '/assets/fonts-keyboard/08-favourites.png'
     ],
     screenshotHeading: 'App previews.',
-    screenshotNote: 'Promotional previews of the planned app experience.',
-    links: [{ label: 'Coming Soon', comingSoon: true }],
+    screenshotNote: 'Promotional previews of the app experience.',
+    links: [
+      { label: 'Coming soon on iOS', storeBadge: 'ios-coming-soon', comingSoon: true },
+      { label: 'Get it on Google Play', url: 'https://play.google.com/store/apps/details?id=com.codemicros.fontskeyboard', storeBadge: 'google-play', primary: true }
+    ],
     privacy: '/projects/fonts-keyboard/privacy-policy/', privacyButton: true,
     support: 'mailto:codemicros@gmail.com'
   },
