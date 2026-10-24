@@ -41,7 +41,7 @@ if (!project) {
       return `<a class="store-badge store-badge-google" href="${safeAttr(link.url)}" target="_blank" rel="noopener noreferrer" aria-label="${safeAttr(link.label)}"><img src="/assets/fonts-keyboard/google-play-badge.png" alt="" /></a>`;
     }
     if (link.storeBadge === 'ios-coming-soon') {
-      return `<span class="store-badge-ios" role="img" aria-label="${safeAttr(link.label)}"><svg viewBox="0 0 24 28" fill="none" aria-hidden="true"><rect x="4" y="1" width="16" height="26" rx="3" stroke="currentColor" stroke-width="2"/><path d="M10 4h4M10 23h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span><small>COMING SOON ON</small><strong>iOS</strong></span></span>`;
+      return `<span class="store-badge-ios" role="img" aria-label="${safeAttr(link.label)}"><img src="/assets/fonts-keyboard/apple-icon.svg" alt="" /><span><small>COMING SOON ON</small><strong>iOS</strong></span></span>`;
     }
     return link.comingSoon
       ? `<span class="button button-disabled" aria-disabled="true">${safeAttr(link.label)}</span>`
