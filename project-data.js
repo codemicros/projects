@@ -136,14 +136,18 @@ window.PROJECTS = [
     about: 'My Money Ledger is built for structured money tracking without unnecessary budgeting clutter. Users can create nested accounts, record credit and debit entries, review monthly balances, search through account trees, and export transaction history when records are needed elsewhere.',
     icon: 'https://play-lh.googleusercontent.com/Gkfq0iPjo1-CpECZS2yeeYB0oPLALoSQlRwFYW21KTVXwP-vbsMeSVuAW5FWEez1R3qyOUGTUAJmZkfCe3od7Q=w240-h480',
     preview: 'https://play-lh.googleusercontent.com/yvk8D3fOm75lL7a6FlnnRf_dVX2-xUU2SRUMXetw4m5qh62jU1TP1iyZPa2ZuxaL0XRgU8CmJD6UyRv04wjcYQ=w526-h296', visual: 'screen',
-    tags: ['Android', 'Finance'], featured: false,
+    tags: ['Android', 'iOS', 'Finance'], featured: false,
+    tagLinks: { iOS: 'https://apps.apple.com/us/app/my-money-ledger/id6804307933' },
     features: ['Accounts and unlimited nested sub-accounts', 'Fast credit and debit entries', 'Monthly ledger and balance summaries', 'Search across the account tree', 'CSV export and import', 'Phone-number sign-in and synced records'],
     screenshots: [
       'https://play-lh.googleusercontent.com/yvk8D3fOm75lL7a6FlnnRf_dVX2-xUU2SRUMXetw4m5qh62jU1TP1iyZPa2ZuxaL0XRgU8CmJD6UyRv04wjcYQ=w526-h296',
       'https://play-lh.googleusercontent.com/Gj1opgLP0hyUTlFeB6RT1xa8uoisTmOfwjLf4HdgNltDIfg0SBZt1a2p2wG3sgipTVLV-Xu6gSujcBWGPCM06A=w526-h296',
       'https://play-lh.googleusercontent.com/cRWYaOOWeGG497UeDLM3qBQ7bjotNxM16L1V07q88PtheW_pGswRrsRW8yFpNHCR72shUGtUMaHqfCPkJR31=w526-h296'
     ],
-    links: [{ label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.codemicros.money_tracker', primary: true }],
+    links: [
+      { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.codemicros.money_tracker', primary: true },
+      { label: 'App Store', url: 'https://apps.apple.com/us/app/my-money-ledger/id6804307933' }
+    ],
     privacy: '/projects/my-money-ledger/privacy-policy/', support: 'mailto:codemicros@gmail.com'
   },
   {
