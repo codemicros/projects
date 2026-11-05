@@ -5,7 +5,7 @@ window.PROJECTS = [
     description: 'Find nearby EV chargers, compare connectors and get directions in the US and UK.',
     summary: 'Find nearby EV charging stations, explore connector details and get directions with EV Station Finder.',
     about: 'EV Station Finder helps electric vehicle drivers discover charging locations in the United States and United Kingdom. Explore a map or list, search by city or ZIP code, filter by connector type or fast charging, and save favourite stations locally. Station information comes from Open Charge Map and map data from OpenStreetMap contributors. Listings, prices and operational status may be incomplete or outdated; operational status is not live availability. Check with the operator before travelling.',
-    icon: '/assets/ev-station-finder/icon.png', preview: '/assets/ev-station-finder/screen-1.webp', visual: 'screen',
+    icon: '/assets/ev-station-finder/charger-icon.png', preview: '/assets/ev-station-finder/screen-1.webp', visual: 'screen',
     tags: ['Android', 'iOS', 'EV Charging'], featured: false,
     features: ['Find nearby charging stations with optional location access', 'Explore an interactive map and searchable station list', 'Search by city or ZIP code in the US and UK', 'Filter CCS, NACS, Type 2, CHAdeMO and J1772 connectors', 'Find chargers listed at 50 kW or above', 'View station details and open directions', 'Save favourite stations locally without an account'],
     screenshots: [
