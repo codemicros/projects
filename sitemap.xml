@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://projects.codemicros.com/projects/ev-station-finder/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://projects.codemicros.com/projects/ev-station-finder/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://projects.codemicros.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://projects.codemicros.com/projects/auto-level-3d-simulator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://projects.codemicros.com/projects/auto-level-3d-simulator/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
