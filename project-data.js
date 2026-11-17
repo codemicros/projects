@@ -281,7 +281,10 @@ window.PROJECTS = [
     tags: ['Website', 'Construction'], featured: false,
     features: ['Daily Present, Absent, Half Day and Overtime attendance', 'Worker-wise wage records', 'Advance and payment tracking', 'Monthly hisaab and due amounts', 'Hindi and English interface', 'Worker management and shareable records'],
     screenshots: ['https://majdoorhajiri.codemicros.com/assets/img/screenshots/worker-details.png', 'https://majdoorhajiri.codemicros.com/assets/img/screenshots/attendance.png', 'https://majdoorhajiri.codemicros.com/assets/img/screenshots/monthly-hisab.png'],
-    links: [{ label: 'Visit Website', url: 'https://majdoorhajiri.codemicros.com/', primary: true }], support: 'mailto:codemicros@gmail.com'
+    links: [
+      { label: 'Visit Website', url: 'https://majdoorhajiri.codemicros.com/', primary: true },
+      { label: 'Get Android App', url: 'https://play.google.com/store/apps/details?id=com.majdoor.hajiri' }
+    ], support: 'mailto:codemicros@gmail.com'
   },
   {
     slug: 'calqen-online', name: 'Calqen Online', category: 'websites', kind: 'website', typeLabel: 'Website',
