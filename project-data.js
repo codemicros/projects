@@ -1,5 +1,18 @@
 window.PROJECTS = [
   {
+    slug: 'audio-switcher', name: 'Audio Switcher: Output Changer',
+    category: 'apps', kind: 'app', typeLabel: 'Mobile App', status: 'Coming Soon',
+    description: 'Control audio outputs, test sound and manage listening settings.',
+    summary: 'Audio output controls, sound testing and optional listening features in one app.',
+    about: 'Audio Switcher: Output Changer provides audio output controls, audio testing and optional listening features. Manage available audio outputs and volume, use locally generated test tones, and enable a floating control when needed.',
+    icon: '/assets/audio-switcher/icon.png', preview: '/assets/audio-switcher/icon.png', visual: 'icon',
+    tags: ['Android', 'iOS', 'Audio'], featured: false,
+    features: ['Audio output controls', 'Media volume controls', 'Locally generated audio test tones', 'Optional floating control', 'Settings stored locally'],
+    links: [{ label: 'Android — Coming Soon', comingSoon: true }, { label: 'iOS — Coming Soon', comingSoon: true }],
+    privacy: '/projects/audio-switcher/privacy-policy/', privacyButton: true,
+    support: 'mailto:codemicros@gmail.com'
+  },
+  {
     slug: 'ev-station-finder', name: 'EV Station Finder',
     category: 'apps', kind: 'app', typeLabel: 'Mobile App', status: 'Coming Soon',
     description: 'Find nearby EV chargers, compare connectors and get directions in the US and UK.',
